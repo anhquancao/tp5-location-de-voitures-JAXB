@@ -30,10 +30,6 @@ public class Agency {
         return cars;
     }
 
-    public void generateCarsXML(){
-        XStream
-    }
-
     @Override
     public String toString() {
         return "Agency{" +
