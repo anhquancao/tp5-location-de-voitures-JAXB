@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<distances>
+    <distance distance="10">
+        <fromLocation>hanoi</fromLocation>
+        <toLocation>hcm</toLocation>
+    </distance>
+    <distance distance="10">
+        <fromLocation>hanoi</fromLocation>
+        <toLocation>hcm</toLocation>
+    </distance>
+    <distance distance="12">
+        <fromLocation>hanoi</fromLocation>
+        <toLocation>hcm</toLocation>
+    </distance>
+</distances>

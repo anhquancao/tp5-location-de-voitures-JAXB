@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<locations>
+    <location carId="1">
+        <arrivalDate>2017-03-28T00:00:00+02:00</arrivalDate>
+        <arrivalLocation>hcm</arrivalLocation>
+        <departureDate>2017-03-21T00:00:00+01:00</departureDate>
+        <departureLocation>hanoi</departureLocation>
+    </location>
+    <location carId="2">
+        <arrivalDate>2017-03-28T00:00:00+02:00</arrivalDate>
+        <arrivalLocation>hcm</arrivalLocation>
+        <departureDate>2017-03-21T00:00:00+01:00</departureDate>
+        <departureLocation>hanoi</departureLocation>
+    </location>
+</locations>

@@ -19,7 +19,6 @@ public class LocationSlave implements Runnable {
         this.inputStream = inputStream;
     }
 
-
     @Override
     public void run() {
         BufferedReader reader = new BufferedReader(new InputStreamReader(this.inputStream));
@@ -37,8 +36,18 @@ public class LocationSlave implements Runnable {
                     String id = strs[1];
                     String agencyLocation = strs[2];
                     Car car = new Car(id);
-                    this.companyLocation.addCar(agencyLocation,car);
-
+                    this.companyLocation.addCar(agencyLocation, car);
+                    break;
+                case ActionType.ADD_DISTANCE:
+                    String fromLocation = strs[1];
+                    String toLocation = strs[2];
+                    int distance = Integer.parseInt(strs[3]);
+                    Distance newDistance = new Distance(fromLocation, toLocation, distance);
+                    this.companyLocation.addDistance(newDistance);
+                    break;
+                case ActionType.CONVERT_DISTANCES_TO_XML:
+                    Distances.convertToXml(this.companyLocation.getDistances());
+                    break;
             }
         } catch (IOException e) {
             e.printStackTrace();

@@ -6,6 +6,10 @@ package actions;
 public class Action {
     private String type;
 
+    public String getType() {
+        return type;
+    }
+
     public Action(String type) {
         this.type = type;
     }
